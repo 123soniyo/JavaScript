@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai with code</title>
+</head>
+<body style="background-color:#212121 ;color:#fff">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>
+    const parent=document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children[1].innerHTML)
+    
+    for (let i = 0; i < parent.children.length; i++) {
+        // console.log(parent.children[i].innerHTML)
+        
+    }
+    parent.children[1].style.color='green'
+    // console.log(parent.firstElementChild.style.color='red')
+    // console.log(parent.lastElementChild)
+    
+
+   const day= parent.querySelector('.day')
+//    console.log(day.parentElement)
+// console.log(day.nextElementSibling.innerHTML)
+
+
+
+
+// ++++++++++ NOTE:A nodelist is a collection of document nodes which includes text nodes , attribute nodes and element nodes. A line break is also counted in nodelist but only first one. All subsequent line breaks are ignored by browser++++++++++++++++++
+console.log("Nodes: ",parent.childNodes)
+
+
+</script>
+</html>
